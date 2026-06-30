@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dice Roller 3D</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <h1 class="logo">🎲 Dice Roller</h1>
+      <button id="muteBtn" class="mute" title="Toggle sound" aria-label="Toggle sound">🔊</button>
+    </header>
+
+    <!-- Die type selector -->
+    <div class="selector" role="tablist" aria-label="Choose die">
+      <button class="chip active" data-sides="6"  role="tab">d6</button>
+      <button class="chip"        data-sides="12" role="tab">d12</button>
+      <button class="chip"        data-sides="20" role="tab">d20</button>
+    </div>
+
+    <!-- 3D stage -->
+    <div class="stage">
+      <div class="floor"></div>
+      <div id="dieWrap" class="die-wrap">
+        <!-- Cube (d6) -->
+        <div id="cube" class="cube" aria-hidden="false">
+          <div class="face front"><span class="pips p1"></span></div>
+          <div class="face back"><span class="pips p6"></span></div>
+          <div class="face right"><span class="pips p3"></span></div>
+          <div class="face left"><span class="pips p4"></span></div>
+          <div class="face top"><span class="pips p2"></span></div>
+          <div class="face bottom"><span class="pips p5"></span></div>
+        </div>
+
+        <!-- Polyhedral (d12 / d20) rendered as a stylised gem with a number -->
+        <div id="poly" class="poly hidden" aria-hidden="true">
+          <div class="poly-body">
+            <span id="polyNum" class="poly-num">20</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Result -->
+    <div class="result" aria-live="polite">
+      <div class="result-label">Result</div>
+      <div id="resultNum" class="result-num">—</div>
+    </div>
+
+    <button id="rollBtn" class="roll-btn">Roll</button>
+
+    <footer class="history">
+      <span class="history-label">Last rolls:</span>
+      <div id="historyList" class="history-list"></div>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
