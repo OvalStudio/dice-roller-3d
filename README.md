@@ -109,14 +109,3 @@ Each die type has a dedicated `@keyframes` block with 9–10 hand-tuned keyframe
 
 WebAudio API only — no audio files shipped. Rolling plays 5 overlapping band-pass filtered noise bursts (clatter); landing plays a short triangle-oscillator ding.
 
----
-
-## Built by
-
-[Anurag Singh](https://github.com/OvalStudio) — Builder · Engineer
-
----
-
-## License
-
-MIT — do whatever you want with it.
