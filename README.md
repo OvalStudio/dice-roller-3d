@@ -4,7 +4,7 @@
 
 **A Chrome extension for rolling animated 3D dice — right from your toolbar.**
 
-![Preview](docs/preview.png)
+<img src="docs/preview-d6.png" width="200" alt="d6 — cube" /> <img src="docs/preview-d12.png" width="200" alt="d12 — pentagon" /> <img src="docs/preview-d20.png" width="200" alt="d20 — triangle" />
 
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue?style=flat-square&logo=googlechrome)](https://developer.chrome.com/docs/extensions/mv3/)
 [![Vanilla JS](https://img.shields.io/badge/Vanilla-JS-yellow?style=flat-square&logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
